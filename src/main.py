@@ -1,10 +1,6 @@
 # This is a JSON generating file
 
-import data_input
-import data_output
-import json_dump
-import json_load
-import json_delete
+from modules import data_input, data_output, json_delete, json_load, json_dump, block_gen 
 
 #instruction_data = data_input.getData()
 #json_dump.data_dump(instruction_data)
