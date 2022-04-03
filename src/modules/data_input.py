@@ -18,7 +18,7 @@ Enter the Data to be Appended into the JSON file for Parsing:
     bot_config=input("Enter the Bot Configuration Code:")
     input_data["bot_config"]=bot_config
 
-    bot_inst_code=input("Enter the Bot Intrustion Code:")
+    bot_inst_code=input("Enter the Bot Instruction Code:")
     input_data["bot_inst_code"]=bot_inst_code
 
     return input_data
