@@ -15,4 +15,4 @@ while True:
     print(f"message from client: {message} \n")
     client.send(f"Message recieved with message: {message}".encode('utf-8'))
     client.close()
-    print(f"Connection with {addr} closed \n".decode('utf-8'))
+    print(f"Connection with {addr} closed \n")
