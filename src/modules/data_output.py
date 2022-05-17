@@ -6,3 +6,6 @@ def putData(loaded_data):
         print("Bot ID : " + str(loaded_data["bot_id"]))
         print("Bot Configuration Code : " + str(loaded_data["bot_config"]))
         print("Bot Instruction Code : " + str(loaded_data["bot_inst_code"]))
+        print("Bot Metal Sensor Value : " + str(loaded_data["bot_metal_sense"]))
+        print("Bot GPS Location : " + str(loaded_data["bot_gps_val"]))
+        print("Bot Timestamp: " + str(loaded_data["bot_timestamp"]))
