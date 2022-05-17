@@ -1,14 +1,13 @@
 # This is the Main Code
-# Written by N0M4D15 on 19th April 2022
+# Written by N0M4D15 on 18th May 2022
 
-from modules import block_gen, data_input, data_output, json_delete, json_dump, json_load
+from general import block_gen, data_input, data_output, json_delete, json_dump, json_load
 import json
 import os.path
 
 print('''
 _______________________________________________________________________________________________________
 ''')
-
 print('''
 Welcome to Swarmchain System. 
 This is an emulation of the automated working of Swarmchain nodes when in Action.
@@ -107,6 +106,8 @@ ________________________________________________________________________________
         else:
             print("This file Does NOT Exist. Initial Block Creation Failed!")
             exit()
+        if instruction_data["bot_metal_sense"] == "True":
+            print("Calling Communication Module")
     elif choice == 2:
         loaded_data = json_load.data_load()
         data_output.putData(loaded_data)
