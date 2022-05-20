@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\modules",
+    "\\src\\communication",
     "\\test"
   ],
-  "SelectedNode": "\\src\\main.py",
+  "SelectedNode": "\\Inst1",
   "PreviewInSolutionExplorer": false
 }
