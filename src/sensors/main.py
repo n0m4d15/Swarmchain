@@ -39,7 +39,7 @@ while True:
     print("Metal Detection status is False")
     print(f"NMEA Time: {nmeatime}")
     nmeatime = nmeatime + 1.0
-    print("NMEA Latitude:  NMEA Longitude: ")
+    print("NMEA Latitude: 12.9882 NMEA Longitude: 77.7119")
     print ("Reading Data of Gyroscope and Accelerometer")
     print ("Gx=%.2f" %Gx, u'\u00b0'+ "/s", "\tGy=%.2f" %Gy, u'\u00b0'+ "/s", "\tGz=%.2f" %Gz, u'\u00b0'+ "/s", "\tAx=%.2f g" %Ax, "\tAy=%.2f g" %Ay, "\tAz=%.2f g" %Az)
     print ("Reading Heading Angle")
