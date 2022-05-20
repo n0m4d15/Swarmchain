@@ -10,7 +10,7 @@ def get_loc(inp):
     received_data = (str)(ser.readline()) #read NMEA string received
     GPGGA_data_available = received_data.find(gpgga_info)   #check for NMEA GPGGA string                
     if (GPGGA_data_available > 0):
-        GPGGA_buffer = received_data.split("$GPGGA,",1)[1]  #store data coming after “$GPGGA,” string
+        GPGGA_buffer = received_data.split("$GPGGA,",1)[1]  #store data coming after ï¿½$GPGGA,ï¿½ string
         NMEA_buff = (GPGGA_buffer.split(','))
         nmea_time = []
         nmea_latitude = []
@@ -29,7 +29,7 @@ def get_loc(inp):
 def convert_to_degrees(raw_value):
     decimal_value = raw_value/100.00
     degrees = int(decimal_value)
-    mm_mmmm = (decimal_value – int(decimal_value))/0.6
+    mm_mmmm = (decimal_value ï¿½ int(decimal_value))/0.6
     position = degrees + mm_mmmm
     position = "%.4f" % (position)
     return position

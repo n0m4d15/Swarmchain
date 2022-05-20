@@ -91,7 +91,7 @@ def imu_data(sda1, scl1):
 		heading = heading + 2*pi
 	#convert into angle
 	heading_angle = int(heading * 180/pi)
-	print ("Heading Angle = %d°" %heading_angle)
+	print ("Heading Angle = %dï¿½" %heading_angle)
 	
 	return(Ax, Ay, Az, Gx, Gy, Gz, heading_angle
 
