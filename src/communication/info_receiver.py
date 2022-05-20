@@ -4,9 +4,10 @@ HOST = socket.gethostbyname(socket.gethostname())
 # HOST = 'localhost'
 print(f"Host name: {HOST} \n")
 PORT = 9999
+LISTENER = 4
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST,PORT))
-server.listen(4)
+server.listen(LISTENER)
 while True:
     print("Waiting for connection . . .")
     client,addr = server.accept()
