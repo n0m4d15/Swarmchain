@@ -10,7 +10,7 @@ def get_loc(inp):
     received_data = (str)(ser.readline()) #read NMEA string received
     GPGGA_data_available = received_data.find(gpgga_info)   #check for NMEA GPGGA string                
     if (GPGGA_data_available > 0):
-        GPGGA_buffer = received_data.split("$GPGGA,",1)[1]  #store data coming after “$GPGGA,” string
+        GPGGA_buffer = received_data.split("$GPGGA,",1)[1]  #store data coming after ï¿½$GPGGA,ï¿½ string
         NMEA_buff = (GPGGA_buffer.split(','))
         nmea_time = []
         nmea_latitude = []

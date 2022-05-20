@@ -77,7 +77,7 @@ def imu_data(sda1, scl1):
 	print ("Gx=%.2f" %Gx, u'\u00b0'+ "/s", "\tGy=%.2f" %Gy, u'\u00b0'+ "/s", "\tGz=%.2f" %Gz, u'\u00b0'+ "/s", "\tAx=%.2f g" %Ax, "\tAy=%.2f g" %Ay, "\tAz=%.2f g" %Az) 	
 	
 	Magnetometer_Init()     # initialize HMC5883L magnetometer 
-	print (" Reading Heading Angle")
+	print ("Reading Heading Angle")
 	#Read Accelerometer raw value
 	x = read_raw_data(X_axis_H)
 	z = read_raw_data(Z_axis_H)
@@ -91,7 +91,7 @@ def imu_data(sda1, scl1):
 		heading = heading + 2*pi
 	#convert into angle
 	heading_angle = int(heading * 180/pi)
-	print ("Heading Angle = %d°" %heading_angle)
+	print (f"Heading Angle = {heading_angle} degrees")
 	
 	return(Ax, Ay, Az, Gx, Gy, Gz, heading_angle
 
