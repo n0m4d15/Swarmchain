@@ -29,7 +29,7 @@ def get_loc(inp):
 def convert_to_degrees(raw_value):
     decimal_value = raw_value/100.00
     degrees = int(decimal_value)
-    mm_mmmm = (decimal_value – int(decimal_value))/0.6
+    mm_mmmm = (decimal_value - int(decimal_value))/0.6
     position = degrees + mm_mmmm
     position = "%.4f" % (position)
     return position

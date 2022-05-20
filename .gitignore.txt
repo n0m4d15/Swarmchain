@@ -1,2 +1,4 @@
 .vs/
-Inst
+*.json
+*.sqlite
+*.suo
