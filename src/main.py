@@ -2,6 +2,9 @@
 # Written by N0M4D15 on 18th May 2022
 
 from general import block_gen, data_input, data_output, json_delete, json_dump, json_load
+# from general import *
+from communication import *
+from sensors import *
 import json
 import os.path
 
