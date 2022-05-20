@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\modules",
+    "\\src\\communication",
+    "\\src\\general",
     "\\test"
   ],
-  "SelectedNode": "\\src\\main.py",
+  "SelectedNode": "\\src\\general\\data_input.py",
   "PreviewInSolutionExplorer": false
 }
